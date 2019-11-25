@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SessionActionView" customModule="EASIPRO_Clinic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="549" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-zU-o8R">
+                    <rect key="frame" x="0.0" y="0.0" width="549" height="129"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQe-PP-qNF" customClass="RoundedButton" customModule="SMARTMarkers">
+                            <rect key="frame" x="158.5" y="33" width="232" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="232" id="rnp-ho-lHQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="tintColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Start"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="top" secondItem="K6X-zU-o8R" secondAttribute="top" constant="33" id="fLH-oy-rKR"/>
+                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="centerX" secondItem="K6X-zU-o8R" secondAttribute="centerX" id="kze-e9-nMU"/>
+                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="centerY" secondItem="K6X-zU-o8R" secondAttribute="centerY" id="l0s-qC-ucl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="K6X-zU-o8R" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DLJ-0S-q5J"/>
+                <constraint firstItem="K6X-zU-o8R" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Mm1-mY-SVk"/>
+                <constraint firstItem="K6X-zU-o8R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VqR-xV-6WB"/>
+                <constraint firstAttribute="trailing" secondItem="K6X-zU-o8R" secondAttribute="trailing" id="lde-yM-FcG"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnStart" destination="ZQe-PP-qNF" id="lpX-9w-sOV"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="-86.5"/>
+        </view>
+    </objects>
+</document>

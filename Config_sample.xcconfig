@@ -8,3 +8,11 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+
+FHIR_BASE_URL = "<# FHIR Server Endpoint #>"
+
+ASSESSMENTCENTER_BASE_URL = "<# AC API Base URL #>"
+
+ASSESSMENTCENTER_ACCESSID = "<# AC Credentials #>"
+
+ASSESSMENTCENTER_ACCESSTOKEN = "<# AC Credentials #>"
