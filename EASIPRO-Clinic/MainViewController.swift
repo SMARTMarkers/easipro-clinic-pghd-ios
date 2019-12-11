@@ -241,14 +241,13 @@ class MainViewController: UITableViewController {
                     }
                 }
             }
-            
         }
     }
     
     
     
     
-    // MARK: AC Session Management
+    // MARK: - Instrument Session
     
     @objc public func beginSession(_ sender: Any?) {
         

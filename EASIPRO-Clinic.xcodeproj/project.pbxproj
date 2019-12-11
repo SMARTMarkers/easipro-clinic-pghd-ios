@@ -8,17 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		D40760912363320E006702A7 /* RequestOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D407608F2363320E006702A7 /* RequestOrderViewController.swift */; };
+		D41850CD2396F9840002FA16 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D499B5F2219DC80900C15AD8 /* ResearchKit.framework */; };
+		D41850CE2396F9840002FA16 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D499B5F2219DC80900C15AD8 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D42B50E0228B7D24007AC6D2 /* SwiftFHIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42B50DD228B7D11007AC6D2 /* SwiftFHIR.framework */; };
 		D42B50E1228B7D24007AC6D2 /* SwiftFHIR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D42B50DD228B7D11007AC6D2 /* SwiftFHIR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D42B50E3228DB667007AC6D2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D42B50E2228DB667007AC6D2 /* README.md */; };
-		D4409E0122B7D4DE008D61F3 /* SMARTMarkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4409E0022B7D4DE008D61F3 /* SMARTMarkers.framework */; };
-		D4409E0222B7D4DE008D61F3 /* SMARTMarkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4409E0022B7D4DE008D61F3 /* SMARTMarkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4587A6A20AD215700F34744 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D4587A6920AD215700F34744 /* Config.xcconfig */; };
 		D496FA7D2388922F00A8FAB5 /* Config_sample.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D496FA7C2388922F00A8FAB5 /* Config_sample.xcconfig */; };
 		D496FA87238A78F600A8FAB5 /* MainViewController+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496FA86238A78F600A8FAB5 /* MainViewController+Actions.swift */; };
 		D496FA8B238C4DA700A8FAB5 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D496FA8A238C4DA700A8FAB5 /* UIViewController+Extensions.swift */; };
-		D499B5F3219DC80900C15AD8 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D499B5F2219DC80900C15AD8 /* ResearchKit.framework */; };
-		D499B5F4219DC80900C15AD8 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D499B5F2219DC80900C15AD8 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D499B5F6219DC81000C15AD8 /* SMART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D499B5F5219DC81000C15AD8 /* SMART.framework */; };
 		D499B5F7219DC81000C15AD8 /* SMART.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D499B5F5219DC81000C15AD8 /* SMART.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4A414D7209B8E470049D681 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A414D6209B8E470049D681 /* AppDelegate.swift */; };
@@ -30,8 +28,69 @@
 		D4A414FE209B8FCE0049D681 /* PatientSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4A414FA209B8FCE0049D681 /* PatientSectionHeader.xib */; };
 		D4A414FF209B8FCE0049D681 /* PatientSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A414FB209B8FCE0049D681 /* PatientSectionHeader.swift */; };
 		D4A41501209B90380049D681 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A41500209B90380049D681 /* MainViewController.swift */; };
+		D4AF0BB123972787007735A0 /* SMARTMarkers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF0BB0239726B7007735A0 /* SMARTMarkers.framework */; };
+		D4AF0BB223972787007735A0 /* SMARTMarkers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF0BB0239726B7007735A0 /* SMARTMarkers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D4D30252209BBC6200125855 /* App+Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D30251209BBC6200125855 /* App+Configs.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4AF0B99239726B6007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0B91239726B6007735A0 /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE43B1A919546D880017679A;
+			remoteInfo = "SwiftSMART-iOS";
+		};
+		D4AF0B9B239726B6007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0B91239726B6007735A0 /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE43B1B319546D880017679A;
+			remoteInfo = "SwiftSMART-iOSTests";
+		};
+		D4AF0B9D239726B6007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0B91239726B6007735A0 /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EECAA7831A5D3DE60062C64B;
+			remoteInfo = "SwiftSMART-macOS";
+		};
+		D4AF0B9F239726B6007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0B91239726B6007735A0 /* SwiftSMART.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE13AA921A5D44D100B901FD;
+			remoteInfo = "SwiftSMART-macOSTests";
+		};
+		D4AF0BA7239726B6007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0BA1239726B6007735A0 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		D4AF0BA9239726B6007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0BA1239726B6007735A0 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		D4AF0BAF239726B7007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0BAB239726B6007735A0 /* SMARTMarkers.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D4E75D5D2035E73E000CE95A;
+			remoteInfo = SMARTMarkers;
+		};
+		D4AF0BB323972787007735A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4AF0BAB239726B6007735A0 /* SMARTMarkers.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D4E75D5C2035E73E000CE95A;
+			remoteInfo = SMARTMarkers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D41B627C219B794F002683B8 /* Embed Frameworks */ = {
@@ -41,9 +100,9 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D42B50E1228B7D24007AC6D2 /* SwiftFHIR.framework in Embed Frameworks */,
-				D4409E0222B7D4DE008D61F3 /* SMARTMarkers.framework in Embed Frameworks */,
+				D41850CE2396F9840002FA16 /* ResearchKit.framework in Embed Frameworks */,
+				D4AF0BB223972787007735A0 /* SMARTMarkers.framework in Embed Frameworks */,
 				D499B5F7219DC81000C15AD8 /* SMART.framework in Embed Frameworks */,
-				D499B5F4219DC80900C15AD8 /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +113,6 @@
 		D407608F2363320E006702A7 /* RequestOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOrderViewController.swift; sourceTree = "<group>"; };
 		D42B50DD228B7D11007AC6D2 /* SwiftFHIR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftFHIR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42B50E2228DB667007AC6D2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D4409E0022B7D4DE008D61F3 /* SMARTMarkers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SMARTMarkers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4587A6920AD215700F34744 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		D496FA7C2388922F00A8FAB5 /* Config_sample.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config_sample.xcconfig; sourceTree = "<group>"; };
 		D496FA86238A78F600A8FAB5 /* MainViewController+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Actions.swift"; sourceTree = "<group>"; };
@@ -72,6 +130,9 @@
 		D4A414FA209B8FCE0049D681 /* PatientSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientSectionHeader.xib; sourceTree = "<group>"; };
 		D4A414FB209B8FCE0049D681 /* PatientSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatientSectionHeader.swift; sourceTree = "<group>"; };
 		D4A41500209B90380049D681 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D4AF0B91239726B6007735A0 /* SwiftSMART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftSMART.xcodeproj; path = "../smartmarkers-ios/SwiftSMART/SwiftSMART.xcodeproj"; sourceTree = "<group>"; };
+		D4AF0BA1239726B6007735A0 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../smartmarkers-ios/ResearchKit/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		D4AF0BAB239726B6007735A0 /* SMARTMarkers.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SMARTMarkers.xcodeproj; path = "../smartmarkers-ios/SMARTMarkers.xcodeproj"; sourceTree = "<group>"; };
 		D4D30251209BBC6200125855 /* App+Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App+Configs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,9 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D42B50E0228B7D24007AC6D2 /* SwiftFHIR.framework in Frameworks */,
-				D4409E0122B7D4DE008D61F3 /* SMARTMarkers.framework in Frameworks */,
+				D41850CD2396F9840002FA16 /* ResearchKit.framework in Frameworks */,
+				D4AF0BB123972787007735A0 /* SMARTMarkers.framework in Frameworks */,
 				D499B5F6219DC81000C15AD8 /* SMART.framework in Frameworks */,
-				D499B5F3219DC80900C15AD8 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,12 +154,14 @@
 		D4A414CA209B8E470049D681 = {
 			isa = PBXGroup;
 			children = (
-				D4409E0022B7D4DE008D61F3 /* SMARTMarkers.framework */,
 				D42B50E2228DB667007AC6D2 /* README.md */,
 				D42B50DD228B7D11007AC6D2 /* SwiftFHIR.framework */,
 				D499B5F5219DC81000C15AD8 /* SMART.framework */,
 				D499B5F2219DC80900C15AD8 /* ResearchKit.framework */,
 				D4587A6920AD215700F34744 /* Config.xcconfig */,
+				D4AF0BA1239726B6007735A0 /* ResearchKit.xcodeproj */,
+				D4AF0BAB239726B6007735A0 /* SMARTMarkers.xcodeproj */,
+				D4AF0B91239726B6007735A0 /* SwiftSMART.xcodeproj */,
 				D496FA7C2388922F00A8FAB5 /* Config_sample.xcconfig */,
 				D4A414D5209B8E470049D681 /* EASIPRO-Clinic */,
 				D4A414D4209B8E470049D681 /* Products */,
@@ -142,6 +205,34 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D4AF0B92239726B6007735A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF0B9A239726B6007735A0 /* SMART.framework */,
+				D4AF0B9C239726B6007735A0 /* SwiftSMART-iOSTests.xctest */,
+				D4AF0B9E239726B6007735A0 /* SMART.framework */,
+				D4AF0BA0239726B6007735A0 /* SwiftSMART-macOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4AF0BA2239726B6007735A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF0BA8239726B6007735A0 /* ResearchKit.framework */,
+				D4AF0BAA239726B6007735A0 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4AF0BAC239726B6007735A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF0BB0239726B7007735A0 /* SMARTMarkers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +248,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D4AF0BB423972787007735A0 /* PBXTargetDependency */,
 			);
 			name = "EASIPRO-Clinic";
 			productName = "EASIPRO-Clinic";
@@ -190,12 +282,78 @@
 			mainGroup = D4A414CA209B8E470049D681;
 			productRefGroup = D4A414D4209B8E470049D681 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D4AF0BA2239726B6007735A0 /* Products */;
+					ProjectRef = D4AF0BA1239726B6007735A0 /* ResearchKit.xcodeproj */;
+				},
+				{
+					ProductGroup = D4AF0BAC239726B6007735A0 /* Products */;
+					ProjectRef = D4AF0BAB239726B6007735A0 /* SMARTMarkers.xcodeproj */;
+				},
+				{
+					ProductGroup = D4AF0B92239726B6007735A0 /* Products */;
+					ProjectRef = D4AF0B91239726B6007735A0 /* SwiftSMART.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D4A414D2209B8E470049D681 /* EASIPRO-Clinic */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D4AF0B9A239726B6007735A0 /* SMART.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMART.framework;
+			remoteRef = D4AF0B99239726B6007735A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4AF0B9C239726B6007735A0 /* SwiftSMART-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftSMART-iOSTests.xctest";
+			remoteRef = D4AF0B9B239726B6007735A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4AF0B9E239726B6007735A0 /* SMART.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMART.framework;
+			remoteRef = D4AF0B9D239726B6007735A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4AF0BA0239726B6007735A0 /* SwiftSMART-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftSMART-macOSTests.xctest";
+			remoteRef = D4AF0B9F239726B6007735A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4AF0BA8239726B6007735A0 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = D4AF0BA7239726B6007735A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4AF0BAA239726B6007735A0 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = D4AF0BA9239726B6007735A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D4AF0BB0239726B7007735A0 /* SMARTMarkers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SMARTMarkers.framework;
+			remoteRef = D4AF0BAF239726B7007735A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D4A414D1209B8E470049D681 /* Resources */ = {
@@ -232,6 +390,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4AF0BB423972787007735A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SMARTMarkers;
+			targetProxy = D4AF0BB323972787007735A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D4A414DA209B8E470049D681 /* Main.storyboard */ = {
@@ -365,6 +531,7 @@
 		D4A414E6209B8E470049D681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4JTXWLJ7B;
@@ -381,6 +548,7 @@
 		D4A414E7209B8E470049D681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4JTXWLJ7B;
