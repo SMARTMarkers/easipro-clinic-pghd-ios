@@ -11,7 +11,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>PRO-Clinic</string>
+	<string>EASIPRO-Clinic</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -44,13 +44,25 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
+	<string>4</string>
 	<key>FHIR_BASE_URL</key>
 	<string>$(FHIR_BASE_URL)</string>
-	<key>SM_APP_TITLE</key>
-	<string>PRO @ Clinic</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Test App Only. Will not be used</string>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string>$(HKRECORD_USAGE)</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>$(HKRECORD_SHARE)</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>$(HKRECORD_UPDATE)</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Test App Only. Will not be usedWill not be used</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Test App Only. Will not be used</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>$(SPEECH_USAGE)</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
