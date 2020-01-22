@@ -19,7 +19,8 @@ class PatientSectionHeader: UITableViewHeaderFooterView {
     @IBOutlet weak var mrnLbl: UILabel!
     @IBOutlet weak var btnSession: RoundedButton!
 	@IBOutlet weak var btnHistory: RoundedButton!
-	
+    @IBOutlet weak var btnHealth: RoundedButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         btnPatient.isEnabled = true
@@ -32,6 +33,7 @@ class PatientSectionHeader: UITableViewHeaderFooterView {
 		btnMeasures.isEnabled = shouldEnable
 		btnHistory.isEnabled  = shouldEnable
 		btnSession.isEnabled = shouldEnable
+        btnHealth.isEnabled = shouldEnable
 	}
 	
 	

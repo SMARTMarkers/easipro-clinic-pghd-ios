@@ -14,7 +14,7 @@ import ResearchKit
 class MainViewController: UITableViewController {
     
     // Get fhir manager from the appDelegate
-    var fhir: FHIRManager! = (UIApplication.shared.delegate as! AppDelegate).fhir
+    public var fhir: FHIRManager! = (UIApplication.shared.delegate as! AppDelegate).fhir
     
     /// PROMIS Instruments List
     let promisListView = PROMISListViewController(client: PROMISClient.New())
@@ -89,6 +89,10 @@ class MainViewController: UITableViewController {
         patientHeaderView?.btnPatient.addTarget(self, action: #selector(selectPatient(_:)), for: .touchUpInside)
         patientHeaderView?.btnSession.addTarget(self, action: #selector(selectSurveys(_:)), for: .touchUpInside)
         patientHeaderView?.btnHistory.addTarget(self, action: #selector(selectActiveMeasures(_:)), for: .touchUpInside)
+        
+        patientHeaderView?.btnHealth.addTarget(self, action: #selector(selectHealthInstruments(_:)), for: .touchUpInside)
+        
+        
         return patientHeaderView
     }
     
@@ -226,6 +230,7 @@ class MainViewController: UITableViewController {
     
     @objc func showProfile() {
         
+        
         fhir.authorize { [weak self] (success, userName, error) in
             DispatchQueue.main.async {
                 if let userName = userName {
@@ -248,6 +253,13 @@ class MainViewController: UITableViewController {
     
     
     // MARK: - Instrument Session
+    
+    @objc func createRequest(_ sender: Any?) {
+        
+        let practitioner = fhir.userProfileSet as? Practitioner
+        
+        
+    }
     
     @objc public func beginSession(_ sender: Any?) {
         

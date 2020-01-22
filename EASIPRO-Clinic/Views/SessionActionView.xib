@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +20,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQe-PP-qNF" customClass="RoundedButton" customModule="SMARTMarkers">
                             <rect key="frame" x="158.5" y="33" width="232" height="63"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="232" id="rnp-ho-lHQ"/>
+                                <constraint firstAttribute="width" constant="232" id="ohd-5b-LFk"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="tintColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -31,17 +29,17 @@
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="top" secondItem="K6X-zU-o8R" secondAttribute="top" constant="33" id="fLH-oy-rKR"/>
-                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="centerX" secondItem="K6X-zU-o8R" secondAttribute="centerX" id="kze-e9-nMU"/>
-                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="centerY" secondItem="K6X-zU-o8R" secondAttribute="centerY" id="l0s-qC-ucl"/>
+                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="centerX" secondItem="K6X-zU-o8R" secondAttribute="centerX" id="863-Qv-PDv"/>
+                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="top" secondItem="K6X-zU-o8R" secondAttribute="top" constant="33" id="U28-y9-I2O"/>
+                        <constraint firstItem="ZQe-PP-qNF" firstAttribute="centerY" secondItem="K6X-zU-o8R" secondAttribute="centerY" id="bRw-p3-Kv4"/>
                     </constraints>
                 </view>
             </subviews>
             <constraints>
-                <constraint firstItem="K6X-zU-o8R" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="DLJ-0S-q5J"/>
-                <constraint firstItem="K6X-zU-o8R" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Mm1-mY-SVk"/>
-                <constraint firstItem="K6X-zU-o8R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VqR-xV-6WB"/>
-                <constraint firstAttribute="trailing" secondItem="K6X-zU-o8R" secondAttribute="trailing" id="lde-yM-FcG"/>
+                <constraint firstItem="K6X-zU-o8R" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="1fY-4l-GKa"/>
+                <constraint firstItem="K6X-zU-o8R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6FN-6t-2rq"/>
+                <constraint firstItem="K6X-zU-o8R" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="S7N-hw-WdF"/>
+                <constraint firstItem="K6X-zU-o8R" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Yzf-xL-djl"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

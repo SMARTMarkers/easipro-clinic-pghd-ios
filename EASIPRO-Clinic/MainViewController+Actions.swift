@@ -47,4 +47,40 @@ extension MainViewController {
         
         
     }
+    
+    @objc func selectHealthInstruments(_ sender: UIButton) {
+        
+        let healthList = HealthInstrumentsListViewController(callbackManager: fhir.callbackManager!)
+            healthList.onSelection = { [weak self] (_instruments) in
+                if let _instruments = _instruments {
+                    self?.tasks.append(contentsOf: _instruments.map{ TaskController(instrument: $0) })
+                }
+                self?.resetOnMainQueue()
+            }
+            present(popUpNavigationController(root: healthList, frame: sender.frame), animated: true, completion: nil)
+            
+        }
+    
+}
+
+
+public class HealthInstrumentsListViewController: InstrumentListViewController {
+    
+    var callback: CallbackManager!
+            
+    public convenience init(callbackManager: CallbackManager) {
+        self.init(server: nil)
+        callback = callbackManager
+    }
+    
+    open override func loadQuestionnaires() {
+        if nil != instruments { return }
+        title = "Active Tasks"
+        markBusy()
+        set([
+            Instruments.HealthKit.StepCount.instance,
+            Instruments.Web.OmronBloodPressure.instance(authSettings: [:], callbackManager: &callback)
+        ])
+        markStandby()
+    }
 }

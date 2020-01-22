@@ -13,4 +13,5 @@ class SessionActionView: UITableViewHeaderFooterView {
 
     @IBOutlet weak var btnStart: RoundedButton!
 
+    @IBOutlet weak var btnRequest: RoundedButton!
 }

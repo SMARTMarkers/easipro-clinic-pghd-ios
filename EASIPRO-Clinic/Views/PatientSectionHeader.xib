@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,24 +24,24 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJ7-Uh-XGA" customClass="RoundedButton" customModule="SMARTMarkers">
-                            <rect key="frame" x="524" y="139" width="207" height="49"/>
+                            <rect key="frame" x="537" y="139" width="194" height="49"/>
                             <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="207" id="kGl-nJ-Jyu"/>
+                                <constraint firstAttribute="width" constant="194" id="kGl-nJ-Jyu"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Active PROs ▼"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO1-Dz-Jbs" customClass="RoundedButton" customModule="SMARTMarkers">
-                            <rect key="frame" x="17" y="139" width="240" height="49"/>
+                            <rect key="frame" x="17" y="139" width="153" height="49"/>
                             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="49" id="joY-ce-UzA"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="Select PROMIS ▼"/>
+                            <state key="normal" title="PROMIS ▼"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t92-OL-M1J">
                             <rect key="frame" x="17" y="14" width="714" height="57"/>
@@ -66,47 +64,59 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpg-Ce-dyE" customClass="RoundedButton" customModule="SMARTMarkers">
-                            <rect key="frame" x="273" y="139" width="232" height="49"/>
+                            <rect key="frame" x="178" y="138" width="171" height="48"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="232" id="0Jx-dF-QrD"/>
+                                <constraint firstAttribute="width" constant="171" id="0Jx-dF-QrD"/>
                             </constraints>
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="Select Surveys ▼"/>
+                            <state key="normal" title="Surveys ▼"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLK-ag-c63" customClass="RoundedButton" customModule="SMARTMarkers">
+                            <rect key="frame" x="368" y="139" width="161" height="49"/>
+                            <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Health ▼"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="t92-OL-M1J" firstAttribute="leading" secondItem="Pgs-YI-i6o" secondAttribute="leading" constant="17" id="9OC-UL-vzy"/>
                         <constraint firstItem="t92-OL-M1J" firstAttribute="leading" secondItem="l4s-kz-aY9" secondAttribute="leading" id="Cap-EN-ZOw"/>
                         <constraint firstItem="29C-kC-ebf" firstAttribute="top" secondItem="l4s-kz-aY9" secondAttribute="bottom" constant="4" id="Cfr-94-0sT"/>
-                        <constraint firstItem="Tpg-Ce-dyE" firstAttribute="top" secondItem="t92-OL-M1J" secondAttribute="bottom" constant="68" id="DFe-UN-ZjW"/>
+                        <constraint firstItem="Tpg-Ce-dyE" firstAttribute="top" secondItem="t92-OL-M1J" secondAttribute="bottom" constant="67" id="DFe-UN-ZjW"/>
                         <constraint firstItem="29C-kC-ebf" firstAttribute="leading" secondItem="EO1-Dz-Jbs" secondAttribute="leading" id="Evg-PB-JlJ"/>
-                        <constraint firstItem="Tpg-Ce-dyE" firstAttribute="top" secondItem="iJ7-Uh-XGA" secondAttribute="top" id="OYB-1X-gKZ"/>
-                        <constraint firstItem="t92-OL-M1J" firstAttribute="centerX" secondItem="Pgs-YI-i6o" secondAttribute="centerX" id="UKm-re-9Oz"/>
-                        <constraint firstAttribute="bottom" secondItem="EO1-Dz-Jbs" secondAttribute="bottom" constant="32" id="UbS-HX-eMv"/>
-                        <constraint firstItem="iJ7-Uh-XGA" firstAttribute="leading" secondItem="Tpg-Ce-dyE" secondAttribute="trailing" constant="19" id="YU4-Ba-vM9"/>
+                        <constraint firstItem="iJ7-Uh-XGA" firstAttribute="leading" secondItem="bLK-ag-c63" secondAttribute="trailing" constant="8" id="GD9-8V-lhg"/>
+                        <constraint firstItem="bLK-ag-c63" firstAttribute="top" secondItem="iJ7-Uh-XGA" secondAttribute="top" id="O5L-NQ-j9v"/>
+                        <constraint firstItem="Tpg-Ce-dyE" firstAttribute="top" secondItem="iJ7-Uh-XGA" secondAttribute="top" constant="-1" id="OYB-1X-gKZ"/>
+                        <constraint firstItem="bLK-ag-c63" firstAttribute="firstBaseline" secondItem="iJ7-Uh-XGA" secondAttribute="firstBaseline" id="Qo5-25-elP"/>
+                        <constraint firstItem="EO1-Dz-Jbs" firstAttribute="baseline" secondItem="bLK-ag-c63" secondAttribute="baseline" id="RuJ-fm-6eC"/>
+                        <constraint firstAttribute="trailing" secondItem="iJ7-Uh-XGA" secondAttribute="trailing" constant="17" id="XTl-Q5-QLy"/>
+                        <constraint firstItem="iJ7-Uh-XGA" firstAttribute="leading" secondItem="Tpg-Ce-dyE" secondAttribute="trailing" constant="188" id="YU4-Ba-vM9"/>
                         <constraint firstItem="l4s-kz-aY9" firstAttribute="top" secondItem="t92-OL-M1J" secondAttribute="bottom" id="YxR-jC-gJM"/>
-                        <constraint firstItem="EO1-Dz-Jbs" firstAttribute="baseline" secondItem="Tpg-Ce-dyE" secondAttribute="firstBaseline" id="aYi-Jy-N9s"/>
+                        <constraint firstItem="EO1-Dz-Jbs" firstAttribute="baseline" secondItem="Tpg-Ce-dyE" secondAttribute="firstBaseline" constant="2" id="aYi-Jy-N9s"/>
                         <constraint firstItem="EO1-Dz-Jbs" firstAttribute="height" secondItem="iJ7-Uh-XGA" secondAttribute="height" id="axH-R6-NgW"/>
                         <constraint firstItem="t92-OL-M1J" firstAttribute="trailing" secondItem="iJ7-Uh-XGA" secondAttribute="trailing" id="dv8-W9-TUE"/>
                         <constraint firstItem="EO1-Dz-Jbs" firstAttribute="top" secondItem="29C-kC-ebf" secondAttribute="bottom" constant="9" id="eRE-CQ-2s8"/>
-                        <constraint firstItem="Tpg-Ce-dyE" firstAttribute="leading" secondItem="EO1-Dz-Jbs" secondAttribute="trailing" constant="16" id="fdM-vA-SOr"/>
+                        <constraint firstItem="bLK-ag-c63" firstAttribute="leading" secondItem="Tpg-Ce-dyE" secondAttribute="trailing" constant="19" id="fRJ-ME-pZ3"/>
+                        <constraint firstItem="Tpg-Ce-dyE" firstAttribute="leading" secondItem="EO1-Dz-Jbs" secondAttribute="trailing" constant="8" id="fdM-vA-SOr"/>
                         <constraint firstItem="l4s-kz-aY9" firstAttribute="leading" secondItem="29C-kC-ebf" secondAttribute="leading" id="gfo-8e-Bg7"/>
-                        <constraint firstItem="EO1-Dz-Jbs" firstAttribute="top" secondItem="Tpg-Ce-dyE" secondAttribute="top" id="kuv-JP-IXA"/>
+                        <constraint firstItem="EO1-Dz-Jbs" firstAttribute="top" secondItem="Tpg-Ce-dyE" secondAttribute="top" constant="1" id="kuv-JP-IXA"/>
+                        <constraint firstItem="EO1-Dz-Jbs" firstAttribute="leading" secondItem="Pgs-YI-i6o" secondAttribute="leading" constant="17" id="sy4-dK-YaI"/>
+                        <constraint firstAttribute="bottom" secondItem="EO1-Dz-Jbs" secondAttribute="bottom" constant="32" id="xeb-mi-Uys"/>
+                        <constraint firstAttribute="bottom" secondItem="Tpg-Ce-dyE" secondAttribute="bottom" constant="34" id="yPi-Yu-7Q8"/>
                     </constraints>
                 </view>
             </subviews>
             <constraints>
-                <constraint firstItem="Pgs-YI-i6o" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2SN-CM-9BM"/>
-                <constraint firstAttribute="trailing" secondItem="Pgs-YI-i6o" secondAttribute="trailing" id="UJR-m3-Zk0"/>
-                <constraint firstItem="Pgs-YI-i6o" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="aYW-RB-jUM"/>
-                <constraint firstItem="Pgs-YI-i6o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cPs-gz-Kpq"/>
+                <constraint firstItem="Pgs-YI-i6o" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7tJ-h9-zQS"/>
+                <constraint firstItem="Pgs-YI-i6o" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WPX-lg-7zl"/>
+                <constraint firstItem="Pgs-YI-i6o" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="j7G-of-c7p"/>
+                <constraint firstItem="Pgs-YI-i6o" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sAH-Y1-Qkn"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="btnHealth" destination="bLK-ag-c63" id="YRD-1y-PsS"/>
                 <outlet property="btnHistory" destination="iJ7-Uh-XGA" id="5PY-Ri-2zO"/>
                 <outlet property="btnMeasures" destination="EO1-Dz-Jbs" id="PSa-Tj-TR2"/>
                 <outlet property="btnPatient" destination="t92-OL-M1J" id="SoP-Gx-cJw"/>
@@ -114,7 +124,7 @@
                 <outlet property="dobLbl" destination="l4s-kz-aY9" id="i1u-Na-pHA"/>
                 <outlet property="mrnLbl" destination="29C-kC-ebf" id="eNV-0g-Fwv"/>
             </connections>
-            <point key="canvasLocation" x="157" y="120"/>
+            <point key="canvasLocation" x="156.80000000000001" y="119.64017991004499"/>
         </view>
     </objects>
 </document>
